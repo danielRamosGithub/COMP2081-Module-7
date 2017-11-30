@@ -1,0 +1,404 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   html {
+     font-family: "Open Sans", sans-serif;
+   }
+
+/* FLEXBOX
+========================================================================== */
+
+   #flex body > div {
+   	background: #ccc;
+   	border: 5px solid #aaa;
+   /* STEP 6d: Set the height of the flex-container to fill the whole window */
+
+   /* STEP 1: Set the parent flexbox properties - this is now the FLEX CONTAINER */
+
+   /* STEP 2: Define the main axis - this is the flex-direction
+   Possible values are: row | row-reverse | column | column-reverse (lets go with row) */
+
+   /* STEP 3a: Determine how element in the container will wrap - this is the flex-wrap property
+   Possible values are: nowrap | wrap | wrap-reverse
+   We need to set a width on the flex children to see this */
+
+   /* STEP 4a: Control alignment of flex children along the main axis, with justify-content
+   Possible values are: flex-start | flex-end | center | space-between | space-around
+   We need to reduce the width of the children to see this */
+
+   /* STEP 6c: Change the justify-content back to stretch */
+   /* STEP 5: Align flex children on the cross axis with align-items
+   Possible values are: flex-start | flex-end | center | baseline | stretch */
+
+   /* STEP 10b: Change the align-items on the parent (to flex-start) to see how align self can override this property */
+   /* STEP 6a: Specify how flex children will be reflowed when there is extra space in the cross-axis
+   We will need to resize the children so that they wrap to see this (and change justify-content to flex-start, and the height of the flex container to full height of the viewport - 100vh)
+   Possible values for align-content are: flex-start | flex-end | center | space-between | space-around | stretch */
+
+   }
+
+   #flex body > div > div {
+   	padding: 1rem;
+   /* STEP 3b: Set a width on the flex children to see the flex-wrap property */
+
+   /* STEP4b: Reduce width of the flex children to see the justify-content property */
+
+   /* STEP6b: Increase width of the flex children to see the align-content property */
+
+
+   }
+
+   /* STEP 7: We now turn our attention the the FLEX ITEMS, which are the children of the FLEX CONTAINER
+   Change the order in which the children appear - use order: <number>; */
+
+   /* STEP 8: Control how each of the children are sized with flex-grow */
+   #flex body > div > div:nth-of-type(1) {
+   	background: brown;
+
+
+   }
+
+   #flex body > div > div:nth-of-type(2) {
+   	background: darkorange;
+
+   }
+   #flex body > div > div:nth-of-type(3) {
+   	background: mediumseagreen;
+
+   }
+   #flex body > div > div:nth-of-type(4) {
+   	background: steelblue;
+
+   /* STEP 9b: Set flex-basis on this child */
+
+   /* STEP 10a: Align a particular flex child differently than the rest with align-self (change align-items on the parent to flex-start, first) */
+
+   }
+   #flex body > div > div:nth-of-type(5) {
+   	background: slateblue;
+
+
+   }
+   /* STEP 9a: Control the space occupied by a particular flex child, after which the remaining space will be re-distributed, with flex-basis */
+
+	 /* GRID
+	 ========================================================================== */
+
+	#grid div {
+		/*border: 5px solid grey;*/
+	}
+/* STEP 15a: Associate the below element with the user-defined content zone, "header" with grid-area */
+	#grid .item-a {
+		background-color: rgba(0,0,255,0.5);
+
+	}
+/* STEP 15b: Associate the below element with the user-defined content zone, "sidebar" with grid-area */
+	#grid .item-b {
+		background-color: rgba(255,0,0,0.5);
+
+	}
+/* STEP 15c: Associate the below element with the user-defined content zone, "main" with grid-area */
+	#grid .item-c {
+		background-color: rgba(255,255,0,0.5);
+
+	}
+/* STEP 15d: Associate the below element with the user-defined content zone, "footer" with grid-area */
+	#grid .item-d {
+		background-color: rgba(0,255,0,0.5);
+
+	}
+/* STEP 15e: Associate the below element with the user-defined content zone, "navigation" with grid-area */
+	#grid .item-e {
+		background-color: rgba(255,0,255,0.5);
+
+	}
+
+	 #grid .container {
+/* STEP 11: Set an element as the grid container with display: grid; */
+
+/* STEP 12: Define the columns for the grid with grid-template-columns - use a space-separated list of widths */
+
+/* STEP 13: Define the rows for the grid with grid-template-rows - use a space-separated list of widths or auto */
+
+/* STEP 14: Designate the cells of the resulting grid in terms of user-named content areas with the grid-template-areas property - repeat names for merged cells */
+
+/* STEP 16a: Set gutters between column tracks with grid-column-gap */
+
+/* STEP 16b: Set gutters between row tracks with grid-row-gap */
+	 
+	}
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
